@@ -1,0 +1,35 @@
+//GET all
+GET http://localhost:5205/games
+
+###
+//GET One data
+GET http://localhost:5205/games/1
+
+###
+//POST new data
+POST http://localhost:5205/games 
+Content-Type: application/json
+
+{
+    "Name": "Minecraft",
+    "Genre": "Kids and Family",
+    "Price": 19.99,
+    "ReleaseDate": "2011-11-18"
+}
+
+###
+//PUT new data
+PUT http://localhost:5205/games/4
+Content-Type: application/json
+
+{
+    "Name": "Streey Fighter II Turbo",
+    "Genre": "Fighting",
+    "Price": 9.99,
+    "ReleaseDate": "1991-07-15"
+}
+
+
+###
+//DELETE data
+DELETE http://localhost:5205/games/4
