@@ -11,25 +11,26 @@ POST http://localhost:5205/games
 Content-Type: application/json
 
 {
-    "Name": "Minecraft",
-    "Genre": "Kids and Family",
-    "Price": 19.99,
-    "ReleaseDate": "2011-11-18"
+   
+    "Name": "FIFA 28",
+    "genreId": 3,
+    "Price": 110.99,
+    "ReleaseDate": "1994-02-12"
 }
 
 ###
 //PUT new data
-PUT http://localhost:5205/games/4
+PUT http://localhost:5205/games/2
 Content-Type: application/json
 
 {
-    "Name": "Streey Fighter II Turbo",
-    "Genre": "Fighting",
-    "Price": 9.99,
+    "Name": "Streey Fighter II Turbo 2",
+    "GenreId": 2,
+    "Price": 29.99,
     "ReleaseDate": "1991-07-15"
 }
 
 
 ###
 //DELETE data
-DELETE http://localhost:5205/games/4
+DELETE http://localhost:5205/games/1
